@@ -19,12 +19,23 @@ const Header = () => {
 
                     <li>
                         <NavLink
-                            to="new-product"
+                            to="/new-product"
                             className={({ isActive }) =>
                                 isActive ? "active-link" : ""
                             }
                         >
                             Tạo sản phẩm
+                        </NavLink>
+                    </li>
+
+                    <li>
+                        <NavLink
+                            to="/search"
+                            className={({ isActive }) =>
+                                isActive ? "active-link" : ""
+                            }
+                        >
+                            Tìm kiếm
                         </NavLink>
                     </li>
                 </ul>

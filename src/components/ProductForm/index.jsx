@@ -60,7 +60,7 @@ const ProductForm = ({ submitTitle = "Tạo sản phẩm" }) => {
                         minimumOrderQuantity: parseInt(
                             formData.minimumOrderQuantity
                         ),
-                        tags: formData.tags.split(","),
+                        tags: formData.tags.split(",").map((tag) => tag.trim()),
                     }),
                 }
             );
