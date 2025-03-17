@@ -1,0 +1,25 @@
+ul, li {
+    list-style: none;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-links {
+    display: flex;
+    gap: 30px;
+
+}
+
+.nav-links  li { 
+    cursor: pointer;
+}
+
+.nav-links li .active-link {
+    color: #fff; 
+    background: #646cff;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
